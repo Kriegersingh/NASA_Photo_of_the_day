@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
 import com.example.nasaphotooftheday.R
 import com.example.nasaphotooftheday.model.PhotoOfTheDayResponse
+import com.example.nasaphotooftheday.utils.OnSwipeTouchListener
 import com.example.nasaphotooftheday.viewModels.HomeViewModel
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
@@ -68,6 +69,7 @@ class HomeFrag : Fragment() {
         }
         setObserver()
         setListeners()
+        handleSwipe()
     }
 
     private fun setObserver() {
@@ -220,4 +222,23 @@ class HomeFrag : Fragment() {
         })
     }
 
+    private fun handleSwipe(){
+        swipeLayout.setOnTouchListener(object : OnSwipeTouchListener(requireContext()){
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                setLoadingState()
+                calendarToday.add(Calendar.DAY_OF_MONTH , -1)
+                homeViewModel.fetchPhotoOfTheDay(SimpleDateFormat(API_DATE_FORMAT,Locale.getDefault()).format(calendarToday.time))
+            }
+
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                calendarToday.add(Calendar.DAY_OF_MONTH , 1)
+                if (calendarToday.timeInMillis < maxTime!!){
+                    setLoadingState()
+                    homeViewModel.fetchPhotoOfTheDay(SimpleDateFormat(API_DATE_FORMAT,Locale.getDefault()).format(calendarToday.time))
+                }
+            }
+        })
+    }
 }
