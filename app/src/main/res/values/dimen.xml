@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_point_five">0.5dp</dimen>
+    <dimen name="margin_one">1dp</dimen>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_small_3">3dp</dimen>
+    <dimen name="margin_negative_small">-4dp</dimen>
+    <dimen name="margin_negative_medium">-8dp</dimen>
+    <dimen name="margin_negative_7dp">-7dp</dimen>
+    <dimen name="margin_small_5">5dp</dimen>
+    <dimen name="margin_regular">6dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_big">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_larger">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_larger_26">26dp</dimen>
+    <dimen name="margin_larger_28">28dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_huge">32dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="otp_input_width">40dp</dimen>
+    <dimen name="otp_input_height">42dp</dimen>
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="booking_hour_slot_corner">50dp</dimen>
+    <dimen name="height_31">31dp</dimen>
+    <dimen name="dimen_52">52dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_negative_75">-7.5dp</dimen>
+    <dimen name="dimen_negative_13">-13dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+
+    <!--this is for a reason don't remove same size margins-->
+    <dimen name="login_screen_top_space">100dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="view_holder_width">300dp</dimen>
+
+    <dimen name="country_picker_width">54dp</dimen>
+    <dimen name="bottom_bar_height">56dp</dimen>
+    <dimen name="margin_huge_65">65dp</dimen>
+    <dimen name="booking_item_time_slot_width">68dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_105">105dp</dimen>
+    <dimen name="booking_card_img_height">168dp</dimen>
+    <dimen name="margin188">188dp</dimen>
+    <dimen name="margin_160">160dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_240">240dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+    <dimen name="margin_360">360dp</dimen>
+
+    <!--font sizes-->
+    <dimen name="text_smallest">11sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_regular">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_huge">24sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+    <!--other sizes-->
+    <dimen name="width_half">0.49</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="line_height_22">22sp</dimen>
+    <!-- icon sizes -->
+    <dimen name="btn_width60">60dp</dimen>
+    <dimen name="btn_width49">49dp</dimen>
+    <dimen name="avatar_size">56dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+
+    <!-- Widget  -->
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="wg_height">85dp</dimen>
+    <dimen name="wg_padding">10dp</dimen>
+    <dimen name="wg_icon_height">16dp</dimen>
+    <dimen name="wg_icon_width">13dp</dimen>
+    <dimen name="wg_icon_margin_right">36dp</dimen>
+    <dimen name="wg_icon_image_width">56dp</dimen>
+    <dimen name="wg_text_margin">5dp</dimen>
+    <dimen name="wg_text_size">18sp</dimen>
+    <dimen name="wg_text_width">143dp</dimen>
+    <dimen name="wg_text_letter_spacing">0.62sp</dimen>
+    <dimen name="wg_pg_margin_right">23dp</dimen>
+    <dimen name="wg_pg_margin_top">11dp</dimen>
+    <dimen name="wg_cw_icon_margin">1dp</dimen>
+    <dimen name="margin_220">220dp</dimen>
+    <dimen name="margin_91">91dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="top"
+        android:visibility="visible"
+        android:indeterminate="true"
+        android:translationY="-7dp"
+        android:indeterminateTint="@android:color/white"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/videoView"
+        android:visibility="gone"
+        app:showFullScreenButton="false"
+        app:useWebUi="false"
+        app:showYouTubeButton="false"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/todayImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/titleView"
+        android:visibility="visible"
+        android:paddingHorizontal="@dimen/margin_large"
+        android:weightSum="5"
+        android:layout_marginTop="@dimen/margin_larger"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_regular"
+            android:id="@+id/title"
+            android:layout_weight="3.3"
+            android:text="Cool Vans "
+            android:textAppearance="@style/TitleAppearance" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/date_background"
+            android:gravity="top"
+            android:layout_weight="1.7"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="26- 20 -2020"
+            android:textAppearance="@style/DateAppearance" />
+    </LinearLayout>
+
+
+    <com.example.nasaphotooftheday.utils.FabHelper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingButton"
+        app:layout_anchor="@id/descriptionBottomSheet"
+        android:alpha="0.8"
+        app:backgroundTint="@android:color/white"
+        android:layout_marginBottom="@dimen/margin_larger"
+        android:visibility="gone"
+        app:elevation="@dimen/margin_large"
+        app:layout_anchorGravity="top|end"
+        android:layout_marginEnd="@dimen/margin_large"
+        />
+    <include
+        android:id="@+id/descriptionBottomSheet"
+        android:visibility="gone"
+        layout="@layout/scrolling_content"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
