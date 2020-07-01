@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/titleView"
-        android:visibility="visible"
+        android:visibility="gone"
         android:paddingHorizontal="@dimen/margin_large"
         android:weightSum="5"
         android:layout_marginTop="@dimen/margin_larger"
